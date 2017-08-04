@@ -21,6 +21,7 @@ params:
   azs:
   network_name:
   vm_password:
+  mysql_password:
   vm_type_micro:
   vm_type_small:
   nginx_ip:
