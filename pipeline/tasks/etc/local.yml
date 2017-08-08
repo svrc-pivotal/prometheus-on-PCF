@@ -63,6 +63,7 @@ mysqld_exporter:
     address: 10.0.0.21
     username: root
     password: ${mysql_password}
+prometheus_vm_extension: prometheus-ext
 
 nats:
   password: ${nats_password}
