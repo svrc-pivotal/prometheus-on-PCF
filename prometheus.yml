@@ -261,6 +261,8 @@ instance_groups:
             http_2xx:
               prober: http
               timeout: 5s
+              tls_config:
+                insecure_skip_verify: true
   - name: bosh_exporter
     release: prometheus
     properties:

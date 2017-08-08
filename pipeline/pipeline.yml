@@ -11,7 +11,7 @@ resources:
 - name: pcf-prometheus-git
   type: git
   source:
-    uri: https://github.com/pivotal-cf/prometheus-on-PCF.git
+    uri: https://github.com/svrc-pivotal/prometheus-on-PCF.git
     branch: master 
 - name: prometheus-release
   type: github-release
@@ -124,6 +124,7 @@ jobs:
       prometheus_cf_deployment_name: {{prometheus_cf_deployment_name}}
       azs: {{deploy_azs}}
       network_name: {{deploy_network}}
+      mysql_password: {{mysql_password}}
       vm_password: {{deploy_vm_password}}
       vm_type_micro: {{deploy_vm_type_micro}}
       vm_type_small: {{deploy_vm_type_small}}
