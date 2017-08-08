@@ -226,7 +226,7 @@ instance_groups:
             static_configs:
               - targets:
                 - localhost:9091
-          - job_name: rabbitmq-broker
+          - job_name: rabbitmq-haproxy
             file_sd_configs:
             - files:
               - "/var/vcap/store/bosh_exporter/bosh_target_groups.json"
